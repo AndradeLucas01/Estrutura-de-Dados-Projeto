@@ -4,9 +4,9 @@ import Entidades.Transactions.Despesa;
 import Interfaces.InterfaceDespesas;
 
 public class DespesasRepository implements InterfaceDespesas {
-    private Despesa[] pilha;
+    private final Despesa[] pilha;
     private int topo;
-    private int capacidade;
+    private final int capacidade;
 
     public DespesasRepository(int capacidade) {
         this.capacidade = capacidade;

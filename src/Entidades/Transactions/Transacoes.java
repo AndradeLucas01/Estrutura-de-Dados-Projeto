@@ -1,6 +1,5 @@
 package Entidades.Transactions;
 
-import Entidades.Users.Pessoa;
 
 public abstract class Transacoes {
     protected String data;
@@ -8,7 +7,6 @@ public abstract class Transacoes {
     protected String tipo;
     protected String categoria;
     protected String descricao;
-    protected Pessoa usuario;
     protected int id;
 
     public Transacoes(String data, double valor, String tipo, String categoria, String descricao) {
@@ -28,19 +26,6 @@ public abstract class Transacoes {
         System.out.println("Valor: " + valor);
         System.out.println("Categoria: " + categoria);
         System.out.println("Transação: " + descricao);
-        if (usuario != null) {
-            System.out.println("Usuário: " + usuario.getNome());
-        } else {
-            System.out.println("Essa transação ainda não possui usuário!");
-        }
-    }
-
-    public void setUsuario(Pessoa usuario) {
-        this.usuario = usuario;
-    }
-
-    public Pessoa getUsuario() {
-        return this.usuario;
     }
 
     public String getData() {
