@@ -3,6 +3,7 @@ Projeto feito para a cadeira de "Estrutura de dados" do professor Ricardo Correa
 Alunos:
 
 Guilherme Di Lucca
+
 Lucas Andrade
 
 Descrição do projeto:
